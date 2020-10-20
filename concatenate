@@ -66,7 +66,7 @@ else{
     open $out_fh, ">", $outfile || die "$!: Can't write output into $outfile.\n";
 }
 foreach my $s (keys %{$seq}){
-    print {$out_fh} ">$s: 1-$bp->{$s}->[1]\n";
+    print {$out_fh} ">$s:1-$bp->{$s}->[1]\n";
     print {$out_fh} "$seq->{$s}\n\n";
 }
 close $out_fh;
